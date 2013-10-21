@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ViewAStreamActivity" >
+
+    <TextView
+        android:id="@+id/hello_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hello_title"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/view_info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_info1"
+        android:layout_below="@id/hello_title"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/view_info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_info2"
+        android:layout_below="@id/hello_title"
+        android:layout_toRightOf="@id/view_info1"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+	<GridView 
+    	android:id="@+id/gridview"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="280sp"
+    	android:columnWidth="60dp"
+    	android:numColumns="auto_fit"
+        android:layout_below="@id/view_info1"
+    	android:verticalSpacing="10dp"
+    	android:horizontalSpacing="10dp"
+    	android:stretchMode="columnWidth"
+    	android:gravity="center"
+	/>
+
+    <Button
+        android:id="@+id/view_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridview"
+        android:text="@string/view_button"
+        android:onClick="ViewStreams"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/upload_an_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/upload_an_image"
+        android:onClick="UploadImage"
+        android:textSize="18sp" />
+
+</RelativeLayout>
