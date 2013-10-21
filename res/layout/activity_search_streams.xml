@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SearchStreamsActivity" >
+
+    <EditText
+        android:id="@+id/find_streams"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/find_streams"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_streams"
+        android:onClick="SearchStreams"
+        android:text="@string/search"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/search_info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_info1"
+        android:layout_below="@id/search"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/search_info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_info2"
+        android:layout_below="@id/search"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/search_info1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/search_info3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_info3"
+        android:layout_below="@id/search"
+        android:layout_toRightOf="@id/search_info2"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/search_info4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_info4"
+        android:layout_below="@id/search_info1"
+        android:textSize="18sp" />
+
+	<GridView 
+    	android:id="@+id/gridview"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="220sp"
+    	android:columnWidth="60dp"
+    	android:numColumns="auto_fit"
+        android:layout_below="@id/search_info4"
+    	android:verticalSpacing="10dp"
+    	android:horizontalSpacing="10dp"
+    	android:stretchMode="columnWidth"
+    	android:gravity="center"
+	/>
+
+    <Button
+        android:id="@+id/view_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridview"
+        android:text="@string/view_button"
+        android:onClick="ViewStreams"
+        android:textSize="18sp" />
+    
+    <Button
+        android:id="@+id/more_search_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridview"
+        android:layout_toRightOf="@id/view_button"
+        android:text="@string/more_search_results"
+        android:textSize="18sp" />
+    
+</RelativeLayout>

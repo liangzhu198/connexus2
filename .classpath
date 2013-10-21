@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Liang/git/Connexus2/libs/gson-2.2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Liang/git/Connexus2/libs/gson-2.2.4-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Liang/git/Connexus2/libs/gson-2.2.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Liang/git/Connexus2/libs/robospice-retrofit-1.4.7.jar" sourcepath="C:/Users/Liang/.sourceattacher/robospice-retrofit-1.4.7-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Liang/git/Connexus2/libs/retrofit-1.2.2.jar" sourcepath="C:/Users/Liang/.sourceattacher/retrofit-1.2.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Liang/git/Connexus2/libs/robospice-1.4.7.jar" sourcepath="C:/Users/Liang/.sourceattacher/robospice-1.4.7-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Liang/git/Connexus2/libs/robospice-cache-1.4.7.jar" sourcepath="C:/Users/Liang/.sourceattacher/robospice-cache-1.4.7-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Liang/git/Connexus2/libs/guava-15.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Liang/git/Connexus2/libs/objectify-4.0b1.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
